@@ -96,6 +96,7 @@ def create_segmenter(model_path):
     return vision.ImageSegmenter.create_from_options(options)
 
 
+
 def segment_with_mask(segmenter, image_path, confidence_threshold=MASK_THRESHOLD):
     image = mp.Image.create_from_file(image_path)
     segmentation_result = segmenter.segment(image)
@@ -119,6 +120,7 @@ def segment_with_mask(segmenter, image_path, confidence_threshold=MASK_THRESHOLD
     output_image = np.where(mask_condition[..., None], object_image, background_image)
     
     return output_image, segmentation_result
+
 
 
 def segment_with_blur(segmenter, image_path, confidence_threshold=BLUR_THRESHOLD, blur_kernel=BLUR_KERNEL):
@@ -182,6 +184,7 @@ def main(parent_folder=IMAGES_FOLDER):
                 save_image(composite, str(output_file))
     
     print(f"\nDone! Results in '{output_path}'.")
+
 
 
 if __name__ == '__main__':
