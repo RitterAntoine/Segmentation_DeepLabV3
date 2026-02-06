@@ -19,11 +19,11 @@ The project processes images from a `dataset` folder organized by categories and
 
 ```
 .
-├── test_model.py          # Main script
-├── image_segmentation.ipynb     # Jupyter notebook
-├── deeplabv3.tflite             # Segmentation model
-├── dataset/                     # Input folder
-└── output/                      # Output folder (results)
+├── test_model.py                   # Main script
+├── image_segmentation.ipynb        # Jupyter notebook
+├── deeplabv3.tflite                # Segmentation model
+├── dataset/                        # Input folder
+└── output/                         # Output folder (results)
 ```
 
 ## Installation
