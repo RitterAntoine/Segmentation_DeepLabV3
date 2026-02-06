@@ -57,6 +57,12 @@ Configurable in the code:
 - JPEG
 - PNG
 
+## Dataset
+
+Source: [Images Dataset on Kaggle](https://www.kaggle.com/datasets/pavansanagapati/images-dataset)
+
+**Note**: Only the first 9 images from each folder (cats, dogs, flowers, horses, human) were kept for this project.
+
 ## Output example
 
 The output image will be a composite of the original image, white/gray mask, contours, and blurred background, displayed side by side.
